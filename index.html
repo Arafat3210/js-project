@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="">
+    <header class="navber">
+        <div class="">
+            <nav class=" flex items-center w-[100%] h-20 mx-auto px-10 fixed bg-[#e3e6f3] shadow-xl ">
+                <div class="flex-1 w-64">
+                    <img class="w-36 cursor-pointer" src="img/logo.png" alt="...">
+                </div>
+                <div class="">
+                    <div id="navber"class="duration-700 md:static absolute  bg-[#e3e6f3] md:min-h-fit  min-h-[40vh] top-[90%] left-[-50%] w-[50%] px-8 ">
+                        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-5">
+                            <li>
+                                <a class="link-nav " href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="shop.html">Shop</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end gap-6">
+                    <a href="card.html"><i class="fa-brands fa-shopify text-[26px] "></i></a>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-img flex flex-col items-start pl-20 justify-center "  >
+            <div class="">
+                <h4 class="text-[25px] font-semibold pb-3">Trade-in-offer</h4>
+                <h2 class="text-[55px] font-semibold leading-none">Super value deals <br>
+                    <span class="font-semibold  text-[#088178] ">On all products</span>
+                </h2>
+               
+                <p class="pt-[25px]">Save more with coupons & up to 70% off!</p>
+               <div style="background-image: url(img/button.png);"
+                class="mt-5 bg-no-repeat bg-transparent px-[65px] pt-[6px] pb-[15px] text-[19px] font-semibold text-[#088178]"    >
+                <button class=""><a href="#"> Shop Now</a></button>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="flex flex-wrap items-center m-10">
+
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f1.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#fddde4] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f2.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#cdebbc] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f3.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#d1e8f2] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f4.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#cdd4f8] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f5.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#f6dbf6] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f6.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#fff2e5] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="text-center my-5" >
+            <h1 class="text-[50px] font-bold text-gray-700">Featured products</h1>
+            <p class="text-[18px] text-gray-500">Summer Collection New Morden Design</p>
+        </div>
+
+        <div class=" flex flex-wrap items-center m-5">
+            <div class="w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/f1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class=" w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl ">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/f2.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class=" w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl ">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/f3.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class=" w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/f4.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class=" w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl  shadow-lg hover:shadow-2xl">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/f5.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class=" w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl  ">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/f6.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl ">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/f7.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl">
+                <a href="#">
+                    <div>
+                        <img class="w-auto rounded-2xl" src="img/products/f8.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="Repair Services">
+        <div class="text-center pt-10 w-[100%] bg-cover h-64 my-10" style="background-image: url(img/banner/b2.jpg);">
+            <p  class="text-white font-semibold text-[20px]">Repair Services</p>
+            <h1 class="text-white font-semibold text-[40px]">Up to<span class="text-[#ef3636]"> 70% Off-</span>All t-shirts & Accessories</h1>
+            <button class="text-balck font-bold text-[15px] px-5 py-3 mt-3 rounded-md bg-white hover:bg-[#088178]"><a href="#">Explore More</a></button>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="text-center my-5" >
+            <h1 class="text-[50px] font-bold text-gray-700">New Arrivals</h1>
+            <p class="text-[18px] text-gray-500">Summer Collection New Morden Design</p>
+        </div>
+
+        <div class=" flex flex-wrap items-center m-5">
+            <div class="w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/n1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class=" w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl ">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/n2.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class=" w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl ">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/n3.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class=" w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/n4.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class=" w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl  shadow-lg hover:shadow-2xl">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/n5.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class=" w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl  ">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/n6.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl ">
+                <a href="#">
+                    <div>
+                        <img class=" w-auto rounded-2xl" src="img/products/n7.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-[380px] mx-auto p-3 border-2 m-[15px] rounded-2xl shadow-lg hover:shadow-2xl">
+                <a href="#">
+                    <div>
+                        <img class="w-auto rounded-2xl" src="img/products/n8.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="pt-2 font-medium">adidas</h5>
+                        <h4 class="pt-1 font-bold">Cartoon Astronaut T-Shirts</h4>
+                        <h1 class="text-[#f3b519] text-[12px] ">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </h1>
+                        <h2 class="text-[#088178] text-[20px] mb-4"><span class=" float-right bg-[#e8f6ea]  px-3 py-2  rounded-full"><i class="fa-solid fa-cart-shopping"></i></span></h2>
+                        <span class="text-[#088178] font-bold text-[20px] ">$78</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection">
+        <div class="grid lg:grid-cols-2 md:gird-cols-1 justify-between ">
+            <div class="w-[95%] h-[400px] m-10 flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url(img/banner/b17.jpg);">
+                <div class="pl-5 text-white leading-none">
+                    <h4 class="text-[26px]">crazy deals</h4>
+                    <h4 class="text-[50px] font-bold pt-2">buy 1 get 1 Free</h4>
+                    <p  class="text-[17px] pt-4">The best classic dress is on sale at cara</p>
+                    <button class="text-[20px] border-2 px-4 py-3 mt-5 font-semibold  hover:bg-[#088178] hover:border-none">
+                        <a href="#">Learn More</a></button>
+                </div>
+            </div>
+            <div class="w-[95%] h-[400px] m-10 flex items-center justify-center bg-center bg-cover bg-no-repeat" style="background-image: url(img/banner/b10.jpg); ">
+                <div class="pl-5 text-white leading-none">
+                    <h4 class="text-[26px]">spring/summer</h4>
+                    <h4 class="text-[50px] font-bold pt-2">upcoming season</h4>
+                    <p  class="text-[17px] pt-4">The best classic dress is on sale at cara</p>
+                    <button class="text-[20px] border-2 px-4 py-3 mt-5 font-semibold  hover:bg-[#088178] hover:border-none">
+                        <a href="#">collection</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection-banner">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2  justify-between">
+            <div class="w-[90%] h-[300px] m-10 flex items-center bg-cover bg-center bg-no-repeat" style="background-image: url(img/banner/b7.jpg);">
+                <div class="pl-5">
+                    <h4 class="text-[30px] text-white font-bold ">SEASONAL SALE</h4>
+                    <p  class="text-[20px] text-[#ec544e] font-bold ">Winter Collection -50% OFF</p>
+                </div>
+            </div>
+            <div class="w-[90%] h-[300px] m-10 flex items-center bg-cover bg-center bg-no-repeat" style="background-image: url(img/banner/b4.jpg);">
+                <div class="pl-5">
+                    <h4 class="text-[30px] text-white font-bold ">NEW FOOTWEAR COLLECTION</h4>
+                    <p  class="text-[20px] text-[#ec544e] font-bold ">Spring / Summer 2022</p>
+                </div>
+            </div>
+            <div class="w-[90%] h-[300px] m-10 flex items-center bg-cover bg-center bg-no-repeat" style="background-image: url(img/banner/b18.jpg);">
+                <div class="pl-5 ">
+                    <h4 class="text-[30px] text-white font-bold">T-SHIRTS</h4>
+                    <p  class="text-[20px] text-[#ec544e] font-bold">NEW Trendy Prints</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="Newsletters">
+        <div class="bg-cover w-[100%] h-[180px] pt-14 bg-[#041e42]">
+            <div class="float-right  mr-5">
+                <input type="email" placeholder="Your Email address" class="px-24 py-3">
+                <button class="text-[18px] text-white px-5 py-[10px]  font-semibold  bg-[#088178] "><a href="#">Sign Up</a></button>
+            </div>
+            <h4 class="text-white text-[25px] font-bold px-14">Sign Up For Newsletters</h4>
+            <p class="text-gray-400 px-14 pb-15 font-bold">Get E-mails Updates about our latest shop and <span class="text-[#ffbd27]"> special offers.</span></p>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="grid lg:grid-cols-8 md:grid-cols-6 sm:grid-cols-1 px-5 justify-between my-10">
+            <div class="col-span-2 my-10">
+                <img src="img/logo.png" alt="">
+                <h4 class="text-black font-bold text-[18px] py-2">Contact</h4>
+                <span class="text-gray-700 font-bold text-[17px] ">Address: </span><span class="hover:text-[#088178] ">562 Wellington Road, Street 32, San Francisco</span> <br>
+                <span class="text-gray-700 font-bold text-[17px] ">Phone: </span><span class="hover:text-[#088178]"> +01 2222 365 / (+91) 01 2345 6789</span> <br>
+                <span class="text-gray-700 font-bold text-[17px] ">Hours:</span><span class="hover:text-[#088178] "> 10:00, Mon - Sat</span> <br>
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-pinterest"></i></span>
+                <span><i class="fa-brands fa-youtube"></i></span>
+            </div> 
+            <div class=" my-10">
+                <h4 class="text-black font-bold text-[18px]">About</h4>
+                <p class="hover:text-[#088178] pt-2"><a href="#">About Us</a></p>
+                <p class="hover:text-[#088178] pt-2"><a href="#">Delivery Information</a></p>
+                <p class="hover:text-[#088178] pt-2"><a href="#">Privacy Policy</a></p>
+                <p class="hover:text-[#088178] pt-2"><a href="#">Terms & Conditions</a></p>
+                <p class="hover:text-[#088178] pt-2"><a href="#">Contact</a></p>
+            </div>
+            <div class="my-10">
+                <h4 class="text-black font-bold text-[18px] pb-2">My Account</h4>
+                <div class="text-gray-700 text-[17px] ">
+                    <p ><a href="#">Sign In</a></p>
+                    <p class="hover:text-[#088178] pt-2"><a href="#">View Cart</a><p>
+                    <p class="hover:text-[#088178] pt-2"><a href="#">My Wishlist</a></p>
+                    <p class="hover:text-[#088178] pt-2"><a href="#">Track My Order</a></p>
+                    <p class="hover:text-[#088178] pt-2"><a href="#">Help</a></span>
+                </div>
+            </div>
+            <div class="col-span-2 my-10">
+                <h4 class="text-black font-bold text-[18px] pl-2">Install App</h4>
+                <p class="hover:text-[#088178] pt-2 pl-2">From App Store or Google Play</p>
+                <div class="flex mt-2">
+                    <span><img class="w-[90%] mx-auto border-2" src="img/pay/app.jpg" alt=""></span>
+                    <span><img class="w-[90%] mx-auto border-2" src="img/pay/play.jpg" alt=""></span>
+                </div>
+                <p class="hover:text-[#088178] pt-2 pl-2">Secured Payment Gateways</p>
+                <div class="ml-2 mt-2">
+                    <img src="img/pay/pay.png" alt="">
+                </div>
+            </div>
+            <div class="col-span-2 my-10">
+                <p>2021, Always Support - HTML CSS ECommerce Template</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>

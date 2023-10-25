@@ -1,0 +1,48 @@
+
+
+
+/* Navber-Section */
+
+.link-nav{
+    font-weight: 600;
+    font-size: 20px;
+}
+.link-nav:hover,
+.link-nav:focus{
+    color:#088178 ;
+}
+.link-nav::after{
+    content: "";
+    background-color: #088178;
+    height: 3px;
+    width: 0;
+    margin: auto;
+    display: block;
+    margin-top: 5px;   
+}
+
+.link-nav:hover::after,
+.link-nav:focus::after{
+    width: 100%;
+    transition:  0.3s linear;
+}
+
+/* Banner-Section */
+
+.banner-img{
+    background-image: url(img/hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 10% right 0 ;
+}
+
+
+
+
+
+
+
+
+
+

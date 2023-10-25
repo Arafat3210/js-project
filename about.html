@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="navber">
+        <div class="">
+            <nav class=" flex items-center w-[100%] h-20 mx-auto px-10 fixed bg-[#e3e6f3] shadow-xl ">
+                <div class="flex-1 w-64">
+                    <img class="w-36 cursor-pointer" src="img/logo.png" alt="...">
+                </div>
+                <div class="">
+                    <div id="navber"class="duration-700 md:static absolute  bg-[#e3e6f3] md:min-h-fit  min-h-[40vh] top-[90%] left-[-50%] w-[50%] px-8 ">
+                        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-5">
+                            <li>
+                                <a class="link-nav " href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="shop.html">Shop</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end gap-6">
+                    <a href="card.html"><i class="fa-brands fa-shopify text-[26px] "></i></a>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="shop-banner">
+        <div class="w-[100%] h-[400px]  mx-auto pt-44" style="background-image: url(img/banner/about-b1.png);">
+            <div class="text-white text-center">
+                <h4 class="text-[50px] font-bold">#KnowUs</h4>
+                <p class="text-[20px]">Lorem ipsum dolor sit amet. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center w-[90%] mx-auto mt-20">
+            <div>
+                <img src="img/about/a6.jpg" class="w-[100%] mx-auto" alt="">
+            </div>
+            <div class="col-span-2 justify-center-center pl-5">
+                <h1 class="text-[40px] font-bold">Who We Are?</h1>
+                <p  class="text-[18px] pt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, enim. Voluptas ipsum, labore corporis dolores dolorem sit harum sapiente eaque officia consequuntur fuga eveniet in!</p>
+                <p  class="text-[18px] pt-2 underline decoration-dotted">Create stunning images with as much or as little control as you like thanks to a choice of Basic and creative modes.</p>
+                <marquee loop="-1" scrollamount="5" width="100%" class="bg-[#ccc] mt-5">
+                    Create stunning images with as much or as little control as you like thanks
+                     to a choice of Basic and creative modes.
+                </marquee>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="text-center text-[50px] font-bold">
+            <h1 class="">Download Our <a href="#" class="underline text-[#551a8b] hover:text-[red]">App</a></h1>
+        </div>
+        <div class="grid justify-items-center mt-10">
+            <video autoplay muted loop  class="w-[70%] h-[80%] ">
+                <source src="img/about/1.mp4" type="video/mp4">
+                
+              </video>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="flex flex-wrap items-center m-10">
+
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f1.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#fddde4] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f2.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#cdebbc] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f3.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#d1e8f2] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f4.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#cdd4f8] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f5.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#f6dbf6] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+            <div class="w-[180px] mx-auto m-5 border-2 shadow-lg hover:shadow-2xl">
+                <img class="w-[100%] px-5 py-5" src="img/features/f6.png" alt="">
+                <h1 class="text-center p-1 my-5 mx-8 bg-[#fff2e5] text-[#088178] text-[14px] font-bold">Free Shipping</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="Newsletters">
+        <div class="bg-cover w-[100%] h-[180px] pt-14 bg-[#041e42]">
+            <div class="float-right  mr-5">
+                <input type="email" placeholder="Your Email address" class="px-24 py-3">
+                <button class="text-[18px] text-white px-5 py-[10px]  font-semibold  bg-[#088178] "><a href="#">Sign Up</a></button>
+            </div>
+            <h4 class="text-white text-[25px] font-bold px-14">Sign Up For Newsletters</h4>
+            <p class="text-gray-400 px-14 pb-15 font-bold">Get E-mails Updates about our latest shop and <span class="text-[#ffbd27]"> special offers.</span></p>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="grid lg:grid-cols-8 md:grid-cols-6 sm:grid-cols-1 px-5 justify-between my-10">
+            <div class="col-span-2 my-10">
+                <img src="img/logo.png" alt="">
+                <h4 class="text-black font-bold text-[18px] py-2">Contact</h4>
+                <span class="text-gray-700 font-bold text-[17px] ">Address: </span><span class="hover:text-[#088178] ">562 Wellington Road, Street 32, San Francisco</span> <br>
+                <span class="text-gray-700 font-bold text-[17px] ">Phone: </span><span class="hover:text-[#088178]"> +01 2222 365 / (+91) 01 2345 6789</span> <br>
+                <span class="text-gray-700 font-bold text-[17px] ">Hours:</span><span class="hover:text-[#088178] "> 10:00, Mon - Sat</span> <br>
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-pinterest"></i></span>
+                <span><i class="fa-brands fa-youtube"></i></span>
+            </div> 
+            <div class=" my-10">
+                <h4 class="text-black font-bold text-[18px]">About</h4>
+                <p class="hover:text-[#088178] pt-2"><a href="#">About Us</a></p>
+                <p class="hover:text-[#088178] pt-2"><a href="#">Delivery Information</a></p>
+                <p class="hover:text-[#088178] pt-2"><a href="#">Privacy Policy</a></p>
+                <p class="hover:text-[#088178] pt-2"><a href="#">Terms & Conditions</a></p>
+                <p class="hover:text-[#088178] pt-2"><a href="#">Contact</a></p>
+            </div>
+            <div class="my-10">
+                <h4 class="text-black font-bold text-[18px] pb-2">My Account</h4>
+                <div class="text-gray-700 text-[17px] ">
+                    <p ><a href="#">Sign In</a></p>
+                    <p class="hover:text-[#088178] pt-2"><a href="#">View Cart</a><p>
+                    <p class="hover:text-[#088178] pt-2"><a href="#">My Wishlist</a></p>
+                    <p class="hover:text-[#088178] pt-2"><a href="#">Track My Order</a></p>
+                    <p class="hover:text-[#088178] pt-2"><a href="#">Help</a></span>
+                </div>
+            </div>
+            <div class="col-span-2 my-10">
+                <h4 class="text-black font-bold text-[18px] pl-2">Install App</h4>
+                <p class="hover:text-[#088178] pt-2 pl-2">From App Store or Google Play</p>
+                <div class="flex mt-2">
+                    <span><img class="w-[90%] mx-auto border-2" src="img/pay/app.jpg" alt=""></span>
+                    <span><img class="w-[90%] mx-auto border-2" src="img/pay/play.jpg" alt=""></span>
+                </div>
+                <p class="hover:text-[#088178] pt-2 pl-2">Secured Payment Gateways</p>
+                <div class="ml-2 mt-2">
+                    <img src="img/pay/pay.png" alt="">
+                </div>
+            </div>
+            <div class="col-span-2 my-10">
+                <p>2021, Always Support - HTML CSS ECommerce Template</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
